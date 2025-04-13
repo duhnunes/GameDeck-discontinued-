@@ -8,7 +8,7 @@ import esprettier from 'eslint-config-prettier'
 import prettier from 'eslint-plugin-prettier'
 
 export default tseslint.config(
-  { ignores: ['dist'] },
+  { ignores: ['dist', 'dist-react', 'dist-electron'] },
   {
     extends: [
       js.configs.recommended,

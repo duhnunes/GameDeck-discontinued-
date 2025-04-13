@@ -5,7 +5,9 @@ import { app, BrowserWindow } from 'electron'
 import { isDev } from './util.js'
 
 app.on('ready', () => {
-  const mainWindow = new BrowserWindow({})
+  const mainWindow = new BrowserWindow({
+    frame: false, // Disable default windows Title bar
+  })
 
   if (isDev()) {
     mainWindow.loadURL('http://localhost:5123')
