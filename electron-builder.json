@@ -1,0 +1,15 @@
+{
+  "appId": "com.duhnunes.gametracker",
+  "files": ["dist-electron", "dist-react"],
+  "icon": "./favicon.png",
+  "mac": {
+    "target": "dmg"
+  },
+  "linux": {
+    "target": "AppImage",
+    "category": "Utility"
+  },
+  "win": {
+    "target": ["portable", "msi"]
+  }
+}
