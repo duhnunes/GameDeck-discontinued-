@@ -1,4 +1,4 @@
-import { Plus } from 'lucide-react'
+import { LuPlus } from 'react-icons/lu'
 
 import { SearchBar } from '../searchBar'
 import { Button } from '../ui/button'
@@ -16,7 +16,7 @@ export function AsideMenu() {
           </h2>
 
           <Button variant="primary" size="sm">
-            <Plus className="size-4" />
+            <LuPlus className="size-4" />
           </Button>
         </div>
 

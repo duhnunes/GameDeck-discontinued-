@@ -1,5 +1,5 @@
-import { Search } from 'lucide-react'
 import { type ComponentProps, forwardRef } from 'react'
+import { LuSearch } from 'react-icons/lu'
 import { twMerge } from 'tailwind-merge'
 
 const Input = forwardRef<HTMLInputElement, ComponentProps<'input'>>(
@@ -15,7 +15,7 @@ const Input = forwardRef<HTMLInputElement, ComponentProps<'input'>>(
           ref={ref}
           {...props}
         />
-        <Search className="size-4 absolute left-2 top-1/2 -translate-y-1/2 pointer-events-none" />
+        <LuSearch className="size-4 absolute left-2 top-1/2 -translate-y-1/2 pointer-events-none" />
       </div>
     )
   }
