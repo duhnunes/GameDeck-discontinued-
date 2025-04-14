@@ -1,7 +1,7 @@
 import { FaGithub } from 'react-icons/fa'
 import { LuMaximize, LuMinimize, LuSettings, LuX } from 'react-icons/lu'
 
-import { Button } from '../ui/button'
+import { Button } from '@/app/components/ui/button'
 
 export function ActionsWindow() {
   return (

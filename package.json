@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": {
+    "name": "Duhnunes"
+  },
   "main": "dist-electron/main.js",
   "scripts": {
     "dev": "concurrently \"pnpm run dev:react\" \"pnpm run dev:electron\"",
@@ -12,7 +15,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "preview": "vite preview",
-    "transpile:electron": "tsc --project src/electron/tsconfig.json",
+    "transpile:electron": "tsc --project src-engine/electron/tsconfig.json",
     "dist:mac": "pnpm run transpile:electron && pnpm run build && electron-builder --mac --arm64",
     "dist:win": "pnpm run transpile:electron && pnpm run build && electron-builder --win --x64",
     "dist:linux": "pnpm run transpile:electron && pnpm run build && electron-builder --linux --x64"

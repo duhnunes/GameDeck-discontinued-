@@ -1,8 +1,8 @@
 import { LuPlus } from 'react-icons/lu'
 
-import { Button } from '../ui/button'
-import { Input } from '../ui/input'
-import { Separator } from '../ui/separator'
+import { Button } from '@/app/components/ui/button'
+import { Input } from '@/app/components/ui/input'
+import { Separator } from '@/app/components/ui/separator'
 
 export function AsideMenu() {
   return (

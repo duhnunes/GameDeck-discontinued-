@@ -1,7 +1,7 @@
-import { ActionsWindow } from './components/mainPage/actionWindow'
-import { AsideMenu } from './components/mainPage/asideMenu'
-import { FrameWindow } from './components/mainPage/frameWindow'
 import { Separator } from './components/ui/separator'
+import { AsideMenu } from './features/menu/Sidebar'
+import { ActionsWindow } from './features/windowFrame/Actions'
+import { FrameWindow } from './features/windowFrame/Frame'
 
 function App() {
   return (

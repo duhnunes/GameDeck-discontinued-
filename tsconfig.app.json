@@ -28,6 +28,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src"],
-  "exclude": ["src/electron"]
+  "include": ["src", "src-engine/electron"],
+  "exclude": ["src-engine/electron"]
 }
