@@ -2,6 +2,7 @@
   "appId": "com.duhnunes.gametracker",
   "files": ["dist-electron", "dist-react"],
   "icon": "./favicon.png",
+  "extraResources": ["dist-electron/preload/preload.cjs"],
   "mac": {
     "target": "dmg"
   },

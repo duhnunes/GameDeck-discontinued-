@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "author": {
-    "name": "Duhnunes"
+    "name": "DuHNunes",
+    "email": "duhnunes.dev@gmail.com"
   },
   "main": "dist-electron/main.js",
   "scripts": {
