@@ -1,5 +1,5 @@
 import { Main } from './features/content/Main'
-import { AsideMenu } from './features/menu/Sidebar'
+import { Menubar } from './features/menu/Menubar'
 import { ActionsWindow } from './features/windowFrame/Actions'
 import { FrameWindow } from './features/windowFrame/Frame'
 
@@ -12,7 +12,7 @@ function App() {
       </FrameWindow>
 
       <div className="flex flex-col overflow-hidden">
-        <AsideMenu />
+        <Menubar />
         <Main />
       </div>
     </div>

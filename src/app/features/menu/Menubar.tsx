@@ -4,13 +4,13 @@ import { Button } from '@/app/components/ui/button'
 import { Input } from '@/app/components/ui/input'
 import { Separator } from '@/app/components/ui/separator'
 
-export function AsideMenu() {
+export function Menubar() {
   return (
-    <aside className="h-full py-3 w-52 flex flex-col items-start justify-start shrink-0">
+    <aside className="py-3 w-full flex items-center shrink-0">
       <div className="px-3">
         <Input placeholder="Search..." />
-        <Separator className="my-2" />
       </div>
+      <Separator orientation="vertical" />
       <section className="w-full pl-4 px-3">
         <div className="flex items-center justify-between">
           <h2 className="font-semibold text-xs text-zinc-500 lowercase">
@@ -21,18 +21,6 @@ export function AsideMenu() {
             <LuPlus className="size-4" />
           </Button>
         </div>
-
-        <ul className="mt-2">
-          <li className="py-1 px-2 rounded-md transition-all hover:bg-primary-foreground/10">
-            Counter-Strike 2
-          </li>
-          <li className="py-1 px-2 rounded-md transition-all hover:bg-primary-foreground/10">
-            Dota 2
-          </li>
-          <li className="py-1 px-2 rounded-md transition-all hover:bg-primary-foreground/10">
-            Warcraft 3
-          </li>
-        </ul>
       </section>
     </aside>
   )
