@@ -22,6 +22,7 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-success: var(--success);
   --color-destructive: var(--destructive);
   --color-border: var(--border);
   --color-input: var(--input);
@@ -46,14 +47,6 @@
    --color-minimize-btn: oklch(0.72 0.22 145.0) /* #00CA4E - Verde */;
 }
 
-.frame-window {
-  -webkit-app-region: drag;
-
-  & button {
-    -webkit-app-region: no-drag;
-  }
-}
-
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -70,6 +63,7 @@
   --muted-foreground: oklch(0.552 0.016 285.938);
   --accent: oklch(0.967 0.001 286.375);
   --accent-foreground: oklch(0.21 0.006 285.885);
+  --success: oklch(72.3% 0.219 149.579);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.92 0.004 286.32);
   --input: oklch(0.92 0.004 286.32);
@@ -107,6 +101,7 @@
   --muted-foreground: oklch(0.705 0.015 286.067);
   --accent: oklch(0.274 0.006 286.033);
   --accent-foreground: oklch(0.985 0 0);
+  --success: oklch(52.7% 0.154 150.069);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
@@ -124,4 +119,23 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.552 0.016 285.938);
+}
+
+/* CUSTOM CSS */
+.frame-window {
+  -webkit-app-region: drag;
+
+  & button {
+    -webkit-app-region: no-drag;
+  }
+}
+
+::-webkit-scrollbar {
+  width: .5rem;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-700 rounded-md
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-zinc-600
 }
