@@ -2,3 +2,5 @@ node_module
 dist
 dist-electron
 dist-react
+
+pnpm-lock-yaml
