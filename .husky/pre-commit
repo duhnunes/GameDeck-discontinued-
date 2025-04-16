@@ -23,6 +23,3 @@ pnpm run checklint ||
     ESLint Check Failed. Make the required changes listed above, add changes and try commit again.'
   false;
 )
-
-# If everything passes... try to run a build
-echo '✅✅✅ Looks good. Trying to build now. ✅✅✅'
