@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-@import "tw-animate-css";
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -41,10 +41,10 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-   /* Custom Colors */
-   --color-close-btn: oklch(0.65 0.22 29.0) /* #FF605C - Vermelho */;
-   --color-maximize-btn: oklch(0.78 0.18 83.0) /* #FFBD44 - Amarelo */;
-   --color-minimize-btn: oklch(0.72 0.22 145.0) /* #00CA4E - Verde */;
+  /* Custom Colors */
+  --color-close-btn: oklch(0.65 0.22 29) /* #FF605C - Vermelho */;
+  --color-maximize-btn: oklch(0.78 0.18 83) /* #FFBD44 - Amarelo */;
+  --color-minimize-btn: oklch(0.72 0.22 145) /* #00CA4E - Verde */;
 }
 
 :root {
@@ -81,9 +81,6 @@
   --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.705 0.015 286.067);
-
- 
-
 }
 
 .dark {
@@ -131,11 +128,11 @@
 }
 
 ::-webkit-scrollbar {
-  width: .5rem;
+  width: 0.5rem;
 }
 ::-webkit-scrollbar-thumb {
-  @apply bg-zinc-700 rounded-md
+  @apply bg-zinc-700 rounded-md;
 }
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-zinc-600
+  @apply bg-zinc-600;
 }
