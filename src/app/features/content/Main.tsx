@@ -1,8 +1,10 @@
+import { TabsContent } from '@/app/components/ui/tabs'
+
 import { GameCard } from './GameCard'
 
 export function Main() {
   return (
-    <main className="p-4 h-full overflow-y-auto space-y-4">
+    <TabsContent value="play" className="h-full p-4 overflow-y-auto space-y-4">
       <GameCard />
       <GameCard />
       <GameCard />
@@ -15,6 +17,6 @@ export function Main() {
       <GameCard />
       <GameCard />
       <GameCard />
-    </main>
+    </TabsContent>
   )
 }

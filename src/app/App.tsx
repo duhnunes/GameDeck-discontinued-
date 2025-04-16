@@ -1,3 +1,4 @@
+import { Tabs } from './components/ui/tabs'
 import { Main } from './features/content/Main'
 import { Menubar } from './features/menu/Menubar'
 import { ActionsWindow } from './features/windowFrame/Actions'
@@ -11,10 +12,10 @@ function App() {
         <ActionsWindow />
       </FrameWindow>
 
-      <div className="flex flex-col overflow-hidden">
+      <Tabs defaultValue="play" className="overflow-hidden">
         <Menubar />
         <Main />
-      </div>
+      </Tabs>
     </div>
   )
 }
