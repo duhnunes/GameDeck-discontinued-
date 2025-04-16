@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="w-screen h-screen flex flex-col overflow-hidden">
       <FrameWindow>
-        <h1 className="font-bold text-primary-foreground/70">GameTracker</h1>
+        <h1 className="font-bold text-primary-foreground/70">GameDeck</h1>
         <ActionsWindow />
       </FrameWindow>
 

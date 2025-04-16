@@ -1,5 +1,5 @@
 {
-  "appId": "com.duhnunes.gametracker",
+  "appId": "com.duhnunes.gamedeck",
   "files": ["dist-electron", "dist-react"],
   "icon": "./favicon.png",
   "extraResources": ["dist-electron/preload/preload.cjs"],

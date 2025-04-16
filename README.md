@@ -1,17 +1,17 @@
 <div align="center">
-  <img src="./favicon.png" alt="Gametracker Icons" />
-  <h1>GameTracker</h1>
+  <img src="./favicon.png" alt="GameDeck Icons" />
+  <h1>GameDeck</h1>
 
   <p>
-    <strong>GameTracker é a sua lista organizadora de jogos.</strong>
+    <strong>GameDeck é a sua lista organizadora de jogos.</strong>
   </p>
 
-  [![build](https://img.shields.io/github/actions/workflow/status/duhnunes/gametracker/build.yml)](https://github.com/duhnunes/gametracker/actions)
-  [![release](https://img.shields.io/github/package-json/v/duhnunes/gametracker)](https://github.com/duhnunes/gametracker/releases)
+  [![build](https://img.shields.io/github/actions/workflow/status/duhnunes/gamedeck/build.yml)](https://github.com/duhnunes/gamedeck/actions)
+  [![release](https://img.shields.io/github/package-json/v/duhnunes/gamedeck)](https://github.com/duhnunes/gamedeck/releases)
   ![license](https://img.shields.io/badge/license-MIT-green?style=flat)
   
 
-![GameTracker Demo](./docs/demo.png)
+![GameDeck Demo](./docs/demo.png)
 
 </div>
 
@@ -29,7 +29,7 @@
 
 
 ## 📝 About
-**GameTracker** é um aplicativo simples e eficiente para **adicionar jogos à sua lista**. Ele ajuda você a organizar os títulos que quer explorar, mantendo tudo em um só lugar de forma prática e acessível.
+**GameDeck** é um aplicativo simples e eficiente para **adicionar jogos à sua lista**. Ele ajuda você a organizar os títulos que quer explorar, mantendo tudo em um só lugar de forma prática e acessível.
 
 ## ✨ Features
 - [x] **Interface Elegante** - Navegação fluida e intuitiva, garantindo uma experiência agradável.
@@ -37,30 +37,31 @@
 
 ## 💾 Installation
 > Follow the steps below to install:
-1. Download the latest version of GameTracker from the [Releases](https://github.com/duhnunes/gametracker/releases/latest) page.
-  - Download only `.exe` if you want to install GameTracker on Windows.
+1. Download the latest version of GameDeck from the [Releases](https://github.com/duhnunes/gamedeck/releases/latest) page.
+  - Download only `.exe` if you want to install GameDeck on Windows.
 2. Run the downloaded file
-3. Enjoy GameTracker!
+3. Enjoy GameDeck!
 
 ## ⚒️ Contributing
 
 ### Fork and clone repository
 
-1. Fork the repository [(click here to fork now)](https://github.com/duhnunes/gametracker/fork)
+1. Fork the repository [(click here to fork now)](https://github.com/duhnunes/gamedeck/fork)
 2. Clone repository:
-  - Using GH: `gh repo clone your_username/GameTracker`
-  - Using GIT: `git clone https://github.com/your_username/GameTracker.git`
-3. Open in VSCode:
-  - Type `code GameTracker`
+  - Using GH: `gh repo clone your_username/GameDeck`
+  - Using GIT: `git clone https://github.com/your_username/GameDeck.git`
+3. Create a new branch
+4. Open in VSCode:
+  - Type `code GameDeck`
   - Start Application: `pnpm run dev`
-4. Make yours changes
-5. Push your commits
-6. Submit a new Pull Request
+5. Make yours changes
+6. Push your commits
+7. Submit a new Pull Request
 
 ### Ways can contribute
 
-- **Translation**: Feel free to help translate to new languages or update and improve the ones that are already available on GameTracker.
-- **Code**: GameTracker is build with <ins>TypeScript</ins> and <ins>Electron</ins>.
+- **Translation**: Feel free to help translate to new languages or update and improve the ones that are already available on GameDeck.
+- **Code**: GameDeck is build with <ins>TypeScript</ins> and <ins>Electron</ins>.
 
 ### Project Structure
 - **src/app**: The UI for the App.
@@ -68,10 +69,10 @@
 
 <!-- ## 👥 Contributors
 
-<a href="https://github.com/duhnunes/gametracker/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=duhnunes/gametracker" />
+<a href="https://github.com/duhnunes/gamedeck/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=duhnunes/gamedeck" />
 </a> -->
 
 ## ⚖️ License
 
-GameTracker is licensed under the [MIT License](LICENSE)
+GameDeck is licensed under the [MIT License](LICENSE)
