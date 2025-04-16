@@ -1,5 +1,5 @@
 import { Button } from '@/app/components/ui/button'
-import { Card, CardContent, CardDescription } from '@/app/components/ui/card'
+import { CardContent, CardDescription } from '@/app/components/ui/card'
 import {
   Carousel,
   CarouselContent,
@@ -16,6 +16,8 @@ import {
 } from '@/app/components/ui/dialog'
 import { Input } from '@/app/components/ui/input'
 
+import { ListGameSearch } from './ListGameSearch'
+
 export function AddGame() {
   return (
     <DialogContent>
@@ -28,7 +30,7 @@ export function AddGame() {
 
       <section className="relative">
         <Input placeholder="Game name" />
-        <Card className="absolute p-4 mt-2 shadow-md shadow-zinc-300/20 w-full h-34 hidden"></Card>
+        <ListGameSearch />
       </section>
 
       <section className="flex gap-2 border border-border/20 p-2 rounded min-h-38 text-muted-foreground">
