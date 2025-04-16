@@ -1,4 +1,4 @@
-echo '👷 Testing styling your project before commiting'
+echo '👷 Testing styling your project before commiting and update version project'
 
 # Check tsconfig Standards
 pnpm run checktypes ||
@@ -23,3 +23,9 @@ pnpm run checklint ||
     ESLint Check Failed. Make the required changes listed above, add changes and try commit again.'
   false;
 )
+
+# Increment Version
+pnpm version patch --no-git-tag-version
+
+# Add package.json and pnpm-lock.json (if have), in commit
+git add package.json pnpm-lock.yaml
