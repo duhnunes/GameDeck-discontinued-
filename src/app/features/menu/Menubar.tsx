@@ -1,4 +1,4 @@
-import { LuPlus } from 'react-icons/lu'
+import { LuGamepad2, LuListCheck, LuListPlus } from 'react-icons/lu'
 
 import { Button } from '@/app/components/ui/button'
 import { Input } from '@/app/components/ui/input'
@@ -9,18 +9,22 @@ export function Menubar() {
   return (
     <nav className="p-2 px-3 w-full flex items-center shrink-0 border-b border-border/15 overflow-hidden">
       <div className="flex">
-        <Input placeholder="Search..." />
         <Button size="xs">
-          <LuPlus className="size-4" />
+          <LuListPlus className="size-5" />
         </Button>
+        <Input placeholder="Search..." />
       </div>
       <Separator orientation="vertical" />
-      <section className="w-full pl-4 px-3">
-        <TabsList>
-          <TabsTrigger value="play">Jogar</TabsTrigger>
-          <TabsTrigger value="played">Jogados</TabsTrigger>
-        </TabsList>
-      </section>
+      <TabsList>
+        <TabsTrigger value="play">
+          <LuGamepad2 className="size-4" />
+          Jogar
+        </TabsTrigger>
+        <TabsTrigger value="played">
+          <LuListCheck className="size-4" />
+          Jogados
+        </TabsTrigger>
+      </TabsList>
     </nav>
   )
 }

@@ -26,14 +26,29 @@ export function ActionsWindow() {
           <LuSettings className="size-4" />
         </Button>
       </div>
-      <Button size="xs" title="minimize" onClick={handleMinimize}>
-        <LuMinimize className="size-4 text-minimize-btn" />
+      <Button
+        size="xs"
+        className="text-minimize-btn hover:text-minimize-btn/50"
+        title="minimize"
+        onClick={handleMinimize}
+      >
+        <LuMinimize className="size-4 " />
       </Button>
-      <Button size="xs" title="maximize" onClick={handleMaximize}>
-        <LuMaximize className="size-4 text-maximize-btn" />
+      <Button
+        size="xs"
+        className="text-maximize-btn hover:text-maximize-btn/50"
+        title="maximize"
+        onClick={handleMaximize}
+      >
+        <LuMaximize className="size-4" />
       </Button>
-      <Button size="xs" title="close" onClick={handleClose}>
-        <LuX className="size-4 text-close-btn" />
+      <Button
+        size="xs"
+        className="text-close-btn hover:text-close-btn/50"
+        title="close"
+        onClick={handleClose}
+      >
+        <LuX className="size-4" />
       </Button>
     </section>
   )
