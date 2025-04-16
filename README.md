@@ -58,10 +58,11 @@
 - Using GIT: `git clone https://github.com/your_username/GameDeck.git`
 
 3. Create a new branch
-4. Open in VSCode:
+  - Name branch following commit convention: `type/branch-name` (e.g. `feat/button-modal`, `refactor/rewrite-modal`, `fix/dont-open-modal`)
 
-- Type `code GameDeck`
-- Start Application: `pnpm run dev`
+4. Open in VSCode:
+  - Type `code GameDeck`
+  - Start Application: `pnpm run dev`
 
 5. Make yours changes
 6. Push your commits
