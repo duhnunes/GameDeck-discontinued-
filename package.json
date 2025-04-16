@@ -13,14 +13,17 @@
     "dev:react": "vite",
     "dev:electron": "pnpm run transpile:electron && cross-env NODE_ENV=development electron .",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "format": "prettier --write .",
     "preview": "vite preview",
+    "format": "prettier --write .",
     "transpile:electron": "tsc --project src-engine/electron/tsconfig.json",
     "dist:mac": "pnpm run transpile:electron && pnpm run build && electron-builder --mac --arm64",
     "dist:win": "pnpm run transpile:electron && pnpm run build && electron-builder --win --x64",
     "dist:linux": "pnpm run transpile:electron && pnpm run build && electron-builder --linux --x64",
-    "prepare": "husky"
+    "prepare": "husky",
+    "checktypes": "tsc --noEmit",
+    "checklint": "eslint .",
+    "checkformat": "prettier --check .",
+    "checkall": "pnpm run checktypes && pnpm run checklint && pnpm run checkformat"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.7",
@@ -56,6 +59,7 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "globals": "^15.15.0",
+    "husky": "^9.1.7",
     "prettier": "^3.5.3",
     "react-icons": "^5.5.0",
     "typescript": "~5.7.2",

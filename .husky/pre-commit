@@ -1,0 +1,28 @@
+echo '👷 Testing styling your project before commiting'
+
+# Check tsconfig Standards
+pnpm run checktypes ||
+(
+  echo '🚨🚨🚨 Failed type check. 🚨🚨🚨
+    Type Check Failed. Make the changes required above.'
+  false;
+)
+
+# Check Prettier Standards
+pnpm run checkformat ||
+(
+  echo '🚨🚨🚨 Failed Prettier check. 🚨🚨🚨
+    Prettier Check Failed. Run pnpm run format, add changes and try commit again.'
+  false;
+)
+
+# Check ESLint Standards
+pnpm run checklint ||
+(
+  echo '🚨🚨🚨 Failed ESLint check. 🚨🚨🚨
+    ESLint Check Failed. Make the required changes listed above, add changes and try commit again.'
+  false;
+)
+
+# If everything passes... try to run a build
+echo '✅✅✅ Looks good. Trying to build now. ✅✅✅'
