@@ -22,7 +22,7 @@
     "prepare": "husky",
     "checktypes": "tsc --noEmit",
     "checklint": "eslint .",
-    "checkformat": "prettier --check .",
+    "checkformat": "prettier --check **/*.{ts,tsx,cts,cjs}",
     "checkall": "pnpm run checktypes && pnpm run checklint && pnpm run checkformat"
   },
   "dependencies": {
