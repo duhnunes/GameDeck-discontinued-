@@ -1,8 +1,10 @@
+import { Dialog } from './components/ui/dialog'
 import { Tabs } from './components/ui/tabs'
 import { Main } from './features/content/Main'
 import { Menubar } from './features/menu/Menubar'
-import { ActionsWindow } from './features/windowFrame/Actions'
-import { FrameWindow } from './features/windowFrame/Frame'
+import { AddGame } from './features/sobreposition/AddGame'
+import { ActionsWindow } from './features/window/Actions'
+import { FrameWindow } from './features/window/Frame'
 
 function App() {
   return (
@@ -13,7 +15,10 @@ function App() {
       </FrameWindow>
 
       <Tabs defaultValue="play" className="overflow-hidden">
-        <Menubar />
+        <Dialog>
+          <Menubar />
+          <AddGame />
+        </Dialog>
         <Main />
       </Tabs>
     </div>
