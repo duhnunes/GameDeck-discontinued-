@@ -12,11 +12,6 @@ import {
 export function GameCard() {
   return (
     <Card className="relative group">
-      <img
-        className="min-w-26"
-        src="https://dummyimage.com/10x10/61DAFB/61DAFB"
-        alt="ReactJS"
-      />
       <div className="flex flex-col">
         <CardHeader>
           <CardTitle>Game Title</CardTitle>
@@ -33,7 +28,7 @@ export function GameCard() {
         </CardContent>
       </div>
 
-      <section className="absolute size-full bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity">
+      <section className="absolute top-0 size-full bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity">
         <div className="float-right mr-2 mt-2">
           <Button size="xs" variant="success" title="jogado">
             <LuCheck className="size-6" />
