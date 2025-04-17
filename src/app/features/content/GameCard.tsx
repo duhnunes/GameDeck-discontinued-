@@ -18,7 +18,7 @@ export function GameCard() {
         </CardHeader>
         <CardContent>
           <CardDescription>
-            <p>
+            <p className="line-clamp-3">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Inventore asperiores in fugit dicta aspernatur fugiat iure soluta
               ipsum, et sed quas vel, quaerat, veritatis beatae esse nostrum
