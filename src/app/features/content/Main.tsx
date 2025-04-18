@@ -9,7 +9,7 @@ export function Main() {
         value="play"
         className="h-full p-4 overflow-y-auto flex flex-wrap"
       >
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 place-items-center mx-auto sm:max-w-10/12 w-full">
+        <div className="flex flex-col gap-4 mx-auto w-10/12">
           <GameCard />
           <GameCard />
           <GameCard />
@@ -31,7 +31,7 @@ export function Main() {
         value="played"
         className="h-full p-4 overflow-y-auto flex flex-wrap"
       >
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 place-items-center mx-auto sm:max-w-10/12 w-full">
+        <div className="flex flex-col gap-4 mx-auto w-10/12">
           <GameCard />
           <GameCard />
         </div>

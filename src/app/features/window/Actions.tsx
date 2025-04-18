@@ -16,10 +16,14 @@ export function ActionsWindow() {
     window.electron.maximizeApp()
   }
 
+  const handleOpenGithub = () => {
+    window.electron.openExternal('https://github.com/duhnunes/gamedeck')
+  }
+
   return (
     <section className="flex items-center gap-1 h-full">
       <div className="flex items-center gap-1">
-        <Button size="xs" title="Contributing">
+        <Button size="xs" title="Contributing" onClick={handleOpenGithub}>
           <FaGithub className="size-4" />
         </Button>
         <Button size="xs" id="settings" title="settings" className="mr-2">

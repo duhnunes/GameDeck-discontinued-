@@ -1,6 +1,6 @@
 import path from 'node:path'
 
-import { app, BrowserWindow } from 'electron'
+import { app, BrowserWindow, shell } from 'electron'
 import { ipcMain } from 'electron'
 
 import { getPreloadPath } from './preload/pathResolver.js'
@@ -9,8 +9,9 @@ import { isDev } from './util.js'
 app.on('ready', () => {
   const mainWindow = new BrowserWindow({
     frame: false, // Disable default windows Title bar
-    minHeight: 500,
-    minWidth: 800,
+    height: 550,
+    width: 500,
+    resizable: false,
     webPreferences: {
       devTools: true, // Enable dev tools CTRL + SHIT + I
       preload: getPreloadPath(),
@@ -18,6 +19,7 @@ app.on('ready', () => {
     },
   })
 
+  // BUTTONS ACTIONS WINDOW
   ipcMain.on('closeApp', () => {
     app.quit()
   })
@@ -36,6 +38,11 @@ app.on('ready', () => {
         win.maximize()
       }
     }
+  })
+
+  // Open External Links in Browser
+  ipcMain.on('openExternal', (event, url) => {
+    shell.openExternal(url)
   })
 
   if (isDev()) {

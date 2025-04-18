@@ -6,6 +6,7 @@ declare global {
       minimizeApp: () => void
       maximizeApp: () => void
       closeApp: () => void
+      openExternal: (url: string) => void
     }
   }
 }

@@ -11,7 +11,7 @@ export function GameCard() {
       </CardHeader>
 
       <section className="absolute top-0 size-full bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity">
-        <div className="float-right mr-2 mt-2">
+        <div className="float-right mr-4 mt-2">
           <Button size="xs" variant="success" title="jogado">
             <LuCheck className="size-6" />
           </Button>
