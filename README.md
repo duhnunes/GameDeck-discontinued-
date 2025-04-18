@@ -34,9 +34,11 @@
 ## ✨ Features
 
 - [x] **Interface Elegante** - Navegação fluida e intuitiva, garantindo uma experiência agradável.
-- [x] **Multi-Plataforma** - Suporte para Windows Mac e Linux.
-- [ ] **Adição Inteligente** - Pesquisa de jogos ao adicionar através das maiores plataformas de jogos.
-- [ ] **Notificação de Lançamento** - Notificações de lançamento de jogos que estão na sua lista.
+- [x] **Multi-Plataforma** - Suporte para Windows Mac e Linux (Need tests).
+
+
+- [ ] **Adição Inteligente** - Pesquisa de jogos através das maiores plataformas de jogos (Steam, EA Play, Epic Games, etc.).
+- [ ] **Notificação de Lançamento** - Notificações de lançamento de jogos que estão na sua lista e ainda não foram lançados (Steam).
 
 ## 💾 Installation
 
