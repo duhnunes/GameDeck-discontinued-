@@ -25,7 +25,7 @@ pnpm run checklint ||
 )
 
 # Increment Version
-pnpm version patch --no-git-tag-version
+#pnpm version patch --no-git-tag-version
 
 # Add package.json and pnpm-lock.json (if have), in commit
-git add package.json pnpm-lock.yaml
+#git add package.json pnpm-lock.yaml

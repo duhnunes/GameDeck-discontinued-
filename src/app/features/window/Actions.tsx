@@ -1,5 +1,5 @@
 import { FaGithub } from 'react-icons/fa'
-import { LuMaximize, LuMinimize, LuSettings, LuX } from 'react-icons/lu'
+import { LuMaximize, LuMinimize, LuX } from 'react-icons/lu'
 
 import { Button } from '@/app/components/ui/button'
 
@@ -26,9 +26,9 @@ export function ActionsWindow() {
         <Button size="xs" title="Contributing" onClick={handleOpenGithub}>
           <FaGithub className="size-4" />
         </Button>
-        <Button size="xs" id="settings" title="settings" className="mr-2">
+        {/* <Button size="xs" id="settings" title="settings" className="mr-2">
           <LuSettings className="size-4" />
-        </Button>
+        </Button> */}
       </div>
       <Button
         size="xs"

@@ -35,6 +35,8 @@
 
 - [x] **Interface Elegante** - Navegação fluida e intuitiva, garantindo uma experiência agradável.
 - [x] **Multi-Plataforma** - Suporte para Windows Mac e Linux.
+- [ ] **Adição Inteligente** - Pesquisa de jogos ao adicionar através das maiores plataformas de jogos.
+- [ ] **Notificação de Lançamento** - Notificações de lançamento de jogos que estão na sua lista.
 
 ## 💾 Installation
 
